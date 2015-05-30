@@ -71,3 +71,16 @@ jQuery(window).load(function() {
 	$(".modal-body img, .testimonial-image img").attr("style", "width: auto !important; height: auto !important;");
 
 });
+
+$('a[href^="#download"]').on('click', function(event) {
+
+    var target = $( $(this).attr('href') );
+
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+
+});
