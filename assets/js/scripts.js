@@ -25,7 +25,7 @@ jQuery(document).ready(function() {
     /*
         Background slideshow
     */
-    $('.top-content').backstretch("assets/img/backgrounds/1.jpg");
+    $('.top-content').backstretch("assets/img/backgrounds/2@2x.png");
     $('.how-it-works-container').backstretch("assets/img/backgrounds/2.png");
     $('.call-to-action-container').backstretch("assets/img/backgrounds/2.png");
     $('.testimonials-container').backstretch("assets/img/backgrounds/2.png");
