@@ -254,7 +254,7 @@ ul.navbar-nav {
 .navbar-inverse ul.navbar-nav li a.btn-link-2:active:focus { outline: 0; opacity: 0.6; background: rgba(0, 0, 0, 0.3); color: #fff; }
 
 .navbar-brand {
-	width: 97px;
+	width: 168px;
 	background: url(../img/logo.png) left center no-repeat;
 	text-indent: -99999px;
 }
