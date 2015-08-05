@@ -25,10 +25,7 @@ jQuery(document).ready(function() {
     /*
         Background slideshow
     */
-    $('.top-content').backstretch("assets/img/backgrounds/2@2x.png");
-    $('.how-it-works-container').backstretch("assets/img/backgrounds/2.png");
-    $('.call-to-action-container').backstretch("assets/img/backgrounds/2.png");
-    $('.testimonials-container').backstretch("assets/img/backgrounds/2.png");
+    $('.top-content').backstretch("assets/img/backgrounds/2@2x.png", {centeredY: false, fade: 200});
 
     $('#top-navbar-1').on('shown.bs.collapse', function(){
     	$('.top-content').backstretch("resize");
@@ -50,9 +47,20 @@ jQuery(document).ready(function() {
 	    Modals
 	*/
 	$('.launch-modal').on('click', function(e){
+    console.log('si');
 		e.preventDefault();
 		$( '#' + $(this).data('modal-id') ).modal();
 	});
+
+  $('#big-guy').css("height", $(window).height());
+
+  // CLOCK
+  $('#clock').FlipClock(123000, {countdown: true});
+
+  $('#brian').on('click', function() {
+    window.location = 'https://www.youtube.com/watch?v=zybsn1qGWMI';
+  });
+
 
 });
 
@@ -72,7 +80,7 @@ jQuery(window).load(function() {
 
 });
 
-$('a[href^="#download"]').on('click', function(event) {
+$('*[href^="#download"]').on('click', function(event) {
 
     var target = $( $(this).attr('href') );
 
