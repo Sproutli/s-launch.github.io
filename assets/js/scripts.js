@@ -55,8 +55,11 @@ jQuery(document).ready(function() {
   $('#big-guy').css("height", $(window).height());
 
   // CLOCK
-  //
   $('#clock').FlipClock(123000, {countdown: true});
+
+  $('#brian').on('click', function() {
+    window.location = 'https://www.youtube.com/watch?v=zybsn1qGWMI';
+  });
 
 
 });
