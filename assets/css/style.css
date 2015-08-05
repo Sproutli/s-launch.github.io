@@ -756,13 +756,29 @@ footer {
 
 /******** Watch the video ******/
 #watch-the-video {
-  height: 400px;
-  background-color: rgba(56, 179, 152, 0.2);
+  height: 200px;
+  background-color: rgba(93, 101, 108, 1);
 }
 
 
-#watch-the-video h2, #watch-the-video a {
-  padding-top: 170px;
+#watch-the-video h2 {
+  padding-top: 1em;
   color: #fff !important;
-  text-decoration: underline;
+  margin-bottom: 0px;
+}
+
+#watch-the-video h3 {
+  color: #fff !important;
+  font-weight: 200;
+}
+
+#video-text {
+  padding-left: 4em;
+}
+
+#brian {
+  background-image: url('../img/backgrounds/brian.png');
+  background-size: cover;
+  height: 200px;
+  display: block;
 }
