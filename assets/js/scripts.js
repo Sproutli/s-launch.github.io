@@ -47,9 +47,17 @@ jQuery(document).ready(function() {
 	    Modals
 	*/
 	$('.launch-modal').on('click', function(e){
+    console.log('si');
 		e.preventDefault();
 		$( '#' + $(this).data('modal-id') ).modal();
 	});
+
+  $('#big-guy').css("height", $(window).height());
+
+  // CLOCK
+  //
+  $('#clock').FlipClock(123000, {countdown: true});
+
 
 });
 
@@ -69,7 +77,7 @@ jQuery(window).load(function() {
 
 });
 
-$('a[href^="#download"]').on('click', function(event) {
+$('*[href^="#download"]').on('click', function(event) {
 
     var target = $( $(this).attr('href') );
 

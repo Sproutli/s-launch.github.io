@@ -9,12 +9,13 @@
     <!-- CSS -->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,100,300,500">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/typicons/typicons.min.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/form-elements.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/media-queries.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/objectivehtml/FlipClock/master/compiled/flipclock.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -39,7 +40,7 @@
     </div>
 
     <!-- Top content -->
-    <div class="top-content">
+    <div id="big-guy" class="top-content">
 
       <!-- Top menu -->
       <nav class="navbar navbar-inverse navbar-no-bg" role="navigation">
@@ -71,15 +72,16 @@
               <h1>Find kindness anywhere.</h1>
             </div>
           </div>
-          <!-- <div class="row"> -->
-          <!--   <div id="watch-the-video" class="col-sm-8 col-sm-offset-2"> -->
-          <!--     <h2><a href="#">> Watch the video</a></h2> -->
-          <!--   </div> -->
-          <!-- </div> -->
+          <div class="row">
+            <div class="col-sm-12 text wow fadeInDown main-heading">
+              <h3>Whether it's what to get for lunch, what to wear on your feet, or who cuts your hair, Sproutli makes it easier to find a kinder  option.</h3>
+              <h3>&nbsp;</h3>
+              <h3>We're out to change the world - but we need your help.</h3>
+            </div>
+          </div>
           <div class="row">
             <div class="col-sm-12 top-big-link wow fadeInUp">
-              <!-- Button trigger modal -->
-              <button type="button" class="btn btn-primary btn-lg" href="#download">Get the Sproutli app</button>
+              <button type="button" class="btn btn-primary btn-lg scroll-link" href="#download">Get the Sproutli app</button>
             </div>
           </div>
         </div>
@@ -91,13 +93,13 @@
         <div class="row">
           <div id="video-text" class="col-sm-6">
             <div class="row">
-              <h2>Meet Brian</h2>
+              <h2>Everyone, meet Brian.</h2>
             </div>
             <div class="row">
-              <h3>> Watch the video from the creator of Sproutli.</h3>
+              <h3><a href="https://www.youtube.com/watch?v=zybsn1qGWMI">Watch the video from Sproutli's founder.</a></h3>
             </div>
           </div>
-          <div id="brian" class="col-sm-4">
+          <div id="brian" class="col-sm-6">
             &nbsp;
           </div>
         </div>
@@ -109,11 +111,10 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 app-features section-description wow fadeIn">
-            <h2>The Sproutli App</h2>
+            <h2>Get Sproutli in your pocket</h2>
             <div class="divider-1 wow fadeInUp"><span></span></div>
             <p>
-            One powerful app brings the Vegan community together by letting you search for Vegan-friendly
-            restaurants, cafes, businesses and professionals wherever you are in the world.
+            Whether you're looking to grab a bite to eat, cruising for a new pair of shoes, a doctor that won't pester you about B12, buying cheese online or just hankering for some donuts, Sproutli makes it easier to find what you're looking for.
             </p>
           </div>
         </div>
@@ -121,17 +122,17 @@
           <div class="col-sm-4 app-features-wrapper wow fadeInUp">
             <div class="app-features-box">
               <div class="app-features-box-icon">
-                <span aria-hidden="true" class="typcn typcn-vendor-apple"></span>
+                <span aria-hidden="true" class="ion-ios-nutrition"></span>
               </div>
-              <h3>Any Smartphone</h3>
-              <p>Whether you have an iPhone, Android or Windows device, Sproutli will work seamlessly to give you the best results.</p>
+              <h3>Choose your Vegan Level</h3>
+              <p class="text-left">With our "Vegan Level" slider, you can adjust Sproutli to show you only the results you're interested in. Only want restaurants that are 100% vegan? No problem. After a cosmetic store that has more than 50% vegan products? Easy.</p>
             </div>
             <div class="app-features-box">
               <div class="app-features-box-icon">
-                <span aria-hidden="true" class="typcn typcn-map"></span>
+                <span aria-hidden="true" class="ion-ios-search-strong"></span>
               </div>
-              <h3>Super-accurate Mapping</h3>
-              <p>Sproutli utilises Google Maps technology to give you the the most accurate and up-to-date location details.</p>
+              <h3>Find exactly what you're looking for</h3>
+              <p class="text-left">Wanna get real specific? Sproutli lets you search by location, tags, categories - even whether the owner is a vegetarian or vegan. Whether it's online stores, doctors, hairdressers, B&amp;Bs or just a place to get coffee and cake, we'll help you find it.</p>
             </div>
           </div>
           <div class="col-sm-4 app-features-image wow fadeInDown">
@@ -140,17 +141,17 @@
           <div class="col-sm-4 app-features-wrapper wow fadeInUp">
             <div class="app-features-box">
               <div class="app-features-box-icon">
-                <span aria-hidden="true" class="typcn typcn-image"></span>
+                <span aria-hidden="true" class="ion-thumbsup"></span>
               </div>
-              <h3>Photos and Reviews by other Users</h3>
-              <p>See awesome photos of what a business has to offer, uploaded by a business owner or by fellow Sproutli users. </p>
+              <h3>We do the hard work for you</h3>
+              <p class="text-left">We trawl Facebook and blogs, call restaurants and email online stores so you don't have to. Sproutli works hard to make you happy, and won't judge you when you're looking for pizza at two in the morning. </p>
             </div>
             <div class="app-features-box">
               <div class="app-features-box-icon">
-                <span aria-hidden="true" class="typcn typcn-group-outline"></span>
+                <span aria-hidden="true" class="ion-ios-location"></span>
               </div>
-              <h3>Join the Vegan Community</h3>
-              <p>Wherever you go, you'll know that a Vegan alternative is just around the corner.</p>
+              <h3>Search home or away</h3>
+              <p class="text-left">Unlike other apps, Sproutli doesn't restrict you to just searching around your current location.If you're planning a trip, just tell us where you're headed and we'll do the rest.</p>
             </div>
           </div>
         </div>
@@ -290,6 +291,7 @@
         <script src="assets/js/retina-1.1.0.min.js"></script>
         <script src="assets/js/jquery.magnific-popup.min.js"></script>
         <script src="assets/js/scripts.js"></script>
+        <script src="https://cdn.rawgit.com/objectivehtml/FlipClock/master/compiled/flipclock.min.js"></script>
 
     </body>
 

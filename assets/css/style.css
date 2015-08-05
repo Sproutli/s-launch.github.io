@@ -25,10 +25,9 @@ h1, h2 {
 }
 
 h3 {
-	font-size: 22px;
-    font-weight: 300;
-    color: #555;
-    line-height: 30px;
+  font-size: 1.8em;
+  font-weight: 300;
+  line-height: 1.5em;
 }
 
 img { max-width: 100%; }
@@ -756,18 +755,27 @@ footer {
 
 /******** Watch the video ******/
 #watch-the-video {
-  height: 200px;
+  height: 300px;
   background-color: rgba(93, 101, 108, 1);
+  background: rgba(56, 179, 152, 1);
+  background: -moz-linear-gradient(13deg, rgba(56, 179, 152, 1)14%, rgba(68, 143, 180, 1) 92%);
+  background: -webkit-linear-gradient(13deg, rgba(56, 179, 152, 1)14%, rgba(68, 143, 180, 1) 92%);
+  background: -o-linear-gradient(13deg, rgba(56, 179, 152, 1)14%, rgba(68, 143, 180, 1) 92%);
+  background: -ms-linear-gradient(13deg, rgba(56, 179, 152, 1)14%, rgba(68, 143, 180, 1) 92%);
+  background: linear-gradient(201deg, rgba(56, 179, 152, 1)14%, rgba(68, 143, 180, 1) 92%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#182a73', endColorstr='#20a7ac',GradientType=1 );
+  border-radius: 0;
+  margin: 0em;
 }
 
 
 #watch-the-video h2 {
-  padding-top: 1em;
+  padding-top: 2em;
   color: #fff !important;
   margin-bottom: 0px;
 }
 
-#watch-the-video h3 {
+#watch-the-video a {
   color: #fff !important;
   font-weight: 200;
 }
@@ -779,6 +787,6 @@ footer {
 #brian {
   background-image: url('../img/backgrounds/brian.png');
   background-size: cover;
-  height: 200px;
+  height: 300px;
   display: block;
 }
