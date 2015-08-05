@@ -25,7 +25,7 @@ jQuery(document).ready(function() {
     /*
         Background slideshow
     */
-    $('.top-content').backstretch("assets/img/backgrounds/2@2x.png");
+    $('.top-content').backstretch("assets/img/backgrounds/2@2x.png", {centeredY: false, fade: 200});
 
     $('#top-navbar-1').on('shown.bs.collapse', function(){
     	$('.top-content').backstretch("resize");

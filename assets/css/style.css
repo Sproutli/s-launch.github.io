@@ -264,6 +264,16 @@ ul.navbar-nav {
 
 .inner-bg {
     padding: 70px 0 130px 0;
+    text-shadow: 1px 1px 2px #000 !important;
+}
+
+.inner-bg h1 {
+  font-weight: 300;
+  font-size: 4em;
+}
+
+.main-heading {
+  padding-bottom: 6em;
 }
 
 .top-content .text {
@@ -569,8 +579,18 @@ ul.navbar-nav {
 
 /***** Call to action *****/
 
-.call-to-action-container .section-bottom-button {
+.call-to-action-container {
 	padding-top: 30px;
+	padding-bottom: 30px;
+  background: rgba(56, 179, 152, 1);
+  background: -moz-linear-gradient(13deg, rgba(56, 179, 152, 1)14%, rgba(68, 143, 180, 1) 92%);
+  background: -webkit-linear-gradient(13deg, rgba(56, 179, 152, 1)14%, rgba(68, 143, 180, 1) 92%);
+  background: -o-linear-gradient(13deg, rgba(56, 179, 152, 1)14%, rgba(68, 143, 180, 1) 92%);
+  background: -ms-linear-gradient(13deg, rgba(56, 179, 152, 1)14%, rgba(68, 143, 180, 1) 92%);
+  background: linear-gradient(13deg, rgba(56, 179, 152, 1)14%, rgba(68, 143, 180, 1) 92%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#182a73', endColorstr='#20a7ac',GradientType=1 );
+  border-radius: 0;
+  margin: 0em;
 }
 
 
@@ -732,4 +752,17 @@ footer {
 
 .app-features-box h3 {
 	margin-top: 15px;
+}
+
+/******** Watch the video ******/
+#watch-the-video {
+  height: 400px;
+  background-color: rgba(56, 179, 152, 0.2);
+}
+
+
+#watch-the-video h2, a {
+  padding-top: 170px;
+  color: #fff !important;
+  text-decoration: underline;
 }
