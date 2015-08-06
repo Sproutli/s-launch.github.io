@@ -260,6 +260,7 @@ ul.navbar-nav {
 .navbar-brand {
 	width: 168px;
 	background: url(../img/logo.png) left center no-repeat;
+  background-size: cover;
 	text-indent: -99999px;
 }
 
