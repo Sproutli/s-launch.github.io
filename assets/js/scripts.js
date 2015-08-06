@@ -25,7 +25,7 @@ jQuery(document).ready(function() {
     /*
         Background slideshow
     */
-    $('.top-content').backstretch("assets/img/backgrounds/2@2x.png", {centeredY: false, fade: 200});
+    $('.top-content').backstretch("assets/img/backgrounds/2@2x.jpg", {centeredY: false, centeredX: false, fade: 200});
 
     $('#top-navbar-1').on('shown.bs.collapse', function(){
     	$('.top-content').backstretch("resize");
@@ -58,7 +58,23 @@ jQuery(document).ready(function() {
   $('#clock').FlipClock(123000, {countdown: true});
 
   $('#brian').on('click', function() {
-    window.location = 'https://www.youtube.com/watch?v=zybsn1qGWMI';
+    $('#video-frame').html('<iframe id="the-video" class="embed-responsive-item" src="https://www.youtube.com/embed/zybsn1qGWMI?autoplay=1" autoplay allowfullscreen></iframe>');
+    $('#brian').removeClass('hidden');
+    $('#brian').css('background-image', 'url("")');
+  });
+
+  $('#kindness-card-submit').on('click', function() {
+    var details = {
+      name: $('input[name=InputName]').val(),
+      email: $('input[name=InputEmail]').val()
+    }
+
+    $('#kindness-card-submit').addClass('ion-load-c');
+
+    $.post('https://zapier.com/hooks/catch/bx8uud/', details, function() {
+      $('#thanks-modal').removeClass('hidden');
+      $('#kindness-card-submit').hide();
+    });
   });
 
 
