@@ -1,5 +1,5 @@
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 736px) and (max-width: 1199px) {
 
 	.top-content .list-box { padding-left: 0; margin-top: 20px; }
 	.top-content .list-box-icon { font-size: 40px; line-height: 40px; }
@@ -17,9 +17,21 @@
 	.testimonial-list .testimonial-image { width: 20%; }
 	.testimonial-list .testimonial-text { width: 80%; }
 
+  #video-text h2 {
+    padding-top: 0;
+    font-size: 2em;
+    padding-top: 2em;
+  }
+
+  #watch-the-video h3 a{
+    font-size: 20px;
+    margin-top: 0;
+    padding-bottom: 2em;
+    font-weight: 300;
+  }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 375px) and (max-width: 736px) {
 
 	.top-content .video, .top-content .list { float: none; width: auto; padding-left: 60px; padding-right: 60px; }
 	.top-content .list-box { margin-top: 30px; padding-left: 0; text-align: center; }
@@ -46,6 +58,30 @@
 	.testimonial-list .testimonial-image { width: 25%; }
 	.testimonial-list .testimonial-text { width: 75%; }
 
+  .app-features-container {
+    padding-top: 4em;
+  }
+
+  #watch-the-video {
+    height: 880px;
+  }
+
+  #watch-the-video h2 {
+    padding-top: 0;
+    font-size: 1.5em;
+    padding-top: 2em;
+  }
+
+  #watch-the-video h3 {
+    font-size: 1em;
+    margin-top: 0;
+    padding-bottom: 2em;
+  }
+
+  #brian {
+    height: 240px;
+    background-size: cover;
+  }
 }
 
 @media only screen
@@ -91,6 +127,7 @@ and (max-device-width: 667px) {
 
 	.how-it-works-box-icon .how-it-works-step { left: 20px; }
 
+
     .pricing-box { padding-bottom: 50px; }
     .pricing-box:last-child { padding-bottom: 0; }
 
@@ -98,6 +135,10 @@ and (max-device-width: 667px) {
 	.testimonial-list .testimonial-text { float: none; width: auto; margin-top: 30px; text-align: center; }
 	.testimonial-list .nav-tabs { margin-top: 20px; text-align: center; }
 	.testimonial-list .testimonial-image .testimonial-icon { display: none; }
+
+  .app-features-container {
+    margin-top: 50px;
+  }
 }
 
 /* iPhone 4S and below */
@@ -105,10 +146,17 @@ and (max-device-width: 667px) {
 and (min-device-width: 320px)
 and (max-device-width: 480px) {
   .main-heading { padding-bottom: 0em; }
-  .inner-bg h1 { font-size: 1.5em; }
+  .inner-bg h1, h2 { font-size: 1.5em; }
   .inner-bg h3 { 
     font-size: 0.8em; 
     text-align: left;
+  }
+  .app-features h3 {
+    font-size: 1em; 
+    text-align: center;
+  }
+  .app-features p, .app-features-box p {
+    font-size: 0.8em; 
   }
 	.navbar { padding-top: 0; }
 	.navbar.navbar-no-bg { background: #333; background: rgba(51, 51, 51, 0.9); }
@@ -155,19 +203,33 @@ and (max-device-width: 480px) {
 	.testimonial-list .nav-tabs { margin-top: 20px; text-align: center; }
 	.testimonial-list .testimonial-image .testimonial-icon { display: none; }
 
+  #video-text {
+    height: 240px;
+  }
+
   #watch-the-video {
-    padding: 2em 0 3em 0;
+    height: 480px;
   }
 
   #watch-the-video h2 {
     padding-top: 0;
     font-size: 1.5em;
+    padding-top: 2em;
   }
 
   #watch-the-video h3 {
     font-size: 1em;
     margin-top: 0;
     padding-bottom: 2em;
+  }
+
+  #brian {
+    height: 240px;
+    background-size: cover;
+  }
+
+  .app-features-container {
+    padding-top: 20px;
   }
 }
 

@@ -764,7 +764,6 @@ footer {
 
 /******** Watch the video ******/
 #watch-the-video {
-  height: 300px;
   background-color: rgba(93, 101, 108, 1);
   background: rgba(56, 179, 152, 1);
   background: -moz-linear-gradient(13deg, rgba(56, 179, 152, 1)14%, rgba(68, 143, 180, 1) 92%);
@@ -795,8 +794,9 @@ footer {
 #brian {
   background-image: url('../img/backgrounds/brian.png');
   background-size: cover;
-  height: 300px;
+  background-position: top;
   display: block;
+  min-height: 300px;
 }
 
 
