@@ -48,8 +48,15 @@
 
 }
 
-@media (max-width: 767px) {
-
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px) {
+  .main-heading { padding-bottom: 2em; }
+  .inner-bg h1 { font-size: 2em; }
+  .inner-bg h3 { 
+    font-size: 1em; 
+    text-align: left;
+  }
 	.navbar { padding-top: 0; }
 	.navbar.navbar-no-bg { background: #333; background: rgba(51, 51, 51, 0.9); }
 	.navbar-brand { margin-left: 15px; }
@@ -62,14 +69,14 @@
 	.navbar-inverse ul.navbar-nav li a.btn-link-2:active,
 	.navbar-inverse ul.navbar-nav li a.btn-link-2:active:focus { outline: 0; opacity: 0.6; background: rgba(0, 0, 0, 0.3); border: 1px solid #fff; color: #fff; }
 
-	.inner-bg { padding: 70px 0 130px 0; }
+	.inner-bg { padding: 0 0 0 0; }
 	.top-content .list-box { margin-top: 30px; padding-left: 0; text-align: center; }
 	.top-content .list-box:first-child { margin-top: 50px; }
 	.top-content .list-box-icon { float: none; display: inline-block; }
 	.top-content .list-box h3 { float: none; width: auto; margin-top: 20px; }
 	.top-content .list-box-description { float: none; width: auto; }
-	.top-content .top-big-link { margin-top: 50px; }
-	.top-content .top-big-link a.btn { margin-top: 10px; }
+	.top-content .top-big-link { margin-top: 25px; }
+	.top-content .top-big-link button { margin-top: 10px; }
 
 	.section-description p { padding: 0; }
 
@@ -91,13 +98,77 @@
 	.testimonial-list .testimonial-text { float: none; width: auto; margin-top: 30px; text-align: center; }
 	.testimonial-list .nav-tabs { margin-top: 20px; text-align: center; }
 	.testimonial-list .testimonial-image .testimonial-icon { display: none; }
-
 }
 
-@media (max-width: 415px) {
+/* iPhone 4S and below */
+@media only screen 
+and (min-device-width: 320px)
+and (max-device-width: 480px) {
+  .main-heading { padding-bottom: 0em; }
+  .inner-bg h1 { font-size: 1.5em; }
+  .inner-bg h3 { 
+    font-size: 0.8em; 
+    text-align: left;
+  }
+	.navbar { padding-top: 0; }
+	.navbar.navbar-no-bg { background: #333; background: rgba(51, 51, 51, 0.9); }
+	.navbar-brand { margin-left: 15px; }
+	.navbar-collapse { border: 0; }
+	.navbar-inverse ul.navbar-nav li a:hover, .navbar-inverse ul.navbar-nav li a:focus { padding-bottom: 10px; border-bottom: 1px solid transparent; }
 
-	h1, h2 { font-size: 32px; }
+	.navbar-inverse ul.navbar-nav li a.btn-link-2 { margin-left: 15px; margin-right: 15px; }
+	.navbar-inverse ul.navbar-nav li a.btn-link-2:hover,
+	.navbar-inverse ul.navbar-nav li a.btn-link-2:focus,
+	.navbar-inverse ul.navbar-nav li a.btn-link-2:active,
+	.navbar-inverse ul.navbar-nav li a.btn-link-2:active:focus { outline: 0; opacity: 0.6; background: rgba(0, 0, 0, 0.3); border: 1px solid #fff; color: #fff; }
 
+	.inner-bg { padding: 0 0 0 0; }
+  .top-content .top-big-link { margin-top: 30px; }
+	.top-content .list-box { margin-top: 10px; padding-left: 0; text-align: center; }
+	.top-content .list-box:first-child { margin-top: 10px; }
+	.top-content .list-box-icon { float: none; display: inline-block; }
+	.top-content .list-box h3 { float: none; width: auto; margin-top: 20px; }
+	.top-content .list-box-description { float: none; width: auto; }
+	.top-content .top-big-link button { 
+    font-size: 0.9em;
+    margin-top: 5px; 
+  }
+
+	.section-description p { padding: 0; }
+
+  .more-features-box-text { margin-top: 30px; padding-left: 0; text-align: center; }
+	.more-features-box-text:first-child { margin-top: 50px; }
+	.more-features-box-text-icon { float: none; display: inline-block; }
+	.more-features-box-text h3 { float: none; width: auto; margin-top: 20px; }
+	.more-features-box-text-description { float: none; width: auto; }
+
+	.always-beautiful-box-text { margin-top: 30px; padding-left: 0; text-align: center; }
+	.always-beautiful-box-text-left { padding-right: 0; }
+
+	.how-it-works-box-icon .how-it-works-step { left: 20px; }
+
+  .pricing-box { padding-bottom: 50px; }
+  .pricing-box:last-child { padding-bottom: 0; }
+
+	.testimonial-list .testimonial-image { float: none; width: auto; text-align: center; }
+	.testimonial-list .testimonial-text { float: none; width: auto; margin-top: 30px; text-align: center; }
+	.testimonial-list .nav-tabs { margin-top: 20px; text-align: center; }
+	.testimonial-list .testimonial-image .testimonial-icon { display: none; }
+
+  #watch-the-video {
+    padding: 2em 0 3em 0;
+  }
+
+  #watch-the-video h2 {
+    padding-top: 0;
+    font-size: 1.5em;
+  }
+
+  #watch-the-video h3 {
+    font-size: 1em;
+    margin-top: 0;
+    padding-bottom: 2em;
+  }
 }
 
 
