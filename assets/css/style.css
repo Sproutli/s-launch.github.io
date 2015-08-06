@@ -169,7 +169,7 @@ img { max-width: 100%; }
 }
 
 .modal-body {
-	padding: 0 25px 15px 25px;
+	padding: 25px 25px 15px 25px;
 }
 
 .modal-body img {
@@ -798,4 +798,10 @@ footer {
   background-size: cover;
   height: 300px;
   display: block;
+}
+
+
+/******** util ********/
+.hidden {
+  display: none;
 }

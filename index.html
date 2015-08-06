@@ -252,27 +252,28 @@
           </div>
           <div class="modal-body">
             <div class="row">
-              <form role="form">
+              <form id="kindness-card-form" role="form">
                 <div class="form-group">
-                  <label for="InputName">Enter Name</label>
+                  <label for="InputName">What's your name?</label>
                   <div class="input-group">
-                    <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Name" required>
+                    <input type="text" class="form-control" name="InputName" id="InputName" placeholder="eg. Donald Watson" required>
                     <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
                   </div>
                 </div>
                 <div class="form-group">
-                  <label for="InputName">Enter Email</label>
+                  <label for="InputName">What's your email address?</label>
                   <div class="input-group">
-                    <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Email" required>
+                    <input type="text" class="form-control" name="InputEmail" id="InputEmail" placeholder="eg. donald@sproutli.com" required>
                     <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
                   </div>
                 </div>
             </div>
-              </form>
+            </form>
+            <p id="thanks-modal" class="fadeInUp hidden">Thanks! We'll send you an email to confirm your address, and then let you know when we're ready to launch the card!</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Submit</button>
+            <button id="kindness-card-submit" type="button" class="btn btn-primary">Submit</button>
           </div>
         </div>
       </div>

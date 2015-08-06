@@ -61,6 +61,20 @@ jQuery(document).ready(function() {
     window.location = 'https://www.youtube.com/watch?v=zybsn1qGWMI';
   });
 
+  $('#kindness-card-submit').on('click', function() {
+    var details = {
+      name: $('input[name=InputName]').val(),
+      email: $('input[name=InputEmail]').val()
+    }
+
+    $('#kindness-card-submit').addClass('ion-load-c');
+
+    $.post('https://zapier.com/hooks/catch/bx8uud/', details, function() {
+      $('#thanks-modal').removeClass('hidden');
+      $('#kindness-card-submit').hide();
+    });
+  });
+
 
 });
 
