@@ -31,7 +31,15 @@
   }
 }
 
-@media (min-width: 375px) and (max-width: 736px) {
+/* iPhone6 and iPhone 6+ */
+@media only screen 
+and (min-device-width: 414px) 
+and (max-device-width: 746px) {
+  .main-heading h1 { font-size: 2em;}
+  .inner-bg h3 { 
+    font-size: 0.8em; 
+    text-align: left;
+  }
 
 	.top-content .video, .top-content .list { float: none; width: auto; padding-left: 60px; padding-right: 60px; }
 	.top-content .list-box { margin-top: 30px; padding-left: 0; text-align: center; }
@@ -59,11 +67,7 @@
 	.testimonial-list .testimonial-text { width: 75%; }
 
   .app-features-container {
-    padding-top: 4em;
-  }
-
-  #watch-the-video {
-    height: 880px;
+    padding-top: 1em;
   }
 
   #watch-the-video h2 {
@@ -84,13 +88,13 @@
   }
 }
 
+/* iPhone 5 */
 @media only screen
-and (min-device-width: 375px)
+and (min-device-width: 320px)
 and (max-device-width: 667px) {
-  .main-heading { padding-bottom: 2em; }
-  .inner-bg h1 { font-size: 2em; }
+  .main-heading { padding-bottom: 2em; font-size: 1.5em;}
   .inner-bg h3 { 
-    font-size: 1em; 
+    font-size: 20px;
     text-align: left;
   }
 	.navbar { padding-top: 0; }
@@ -107,12 +111,12 @@ and (max-device-width: 667px) {
 
 	.inner-bg { padding: 0 0 0 0; }
 	.top-content .list-box { margin-top: 30px; padding-left: 0; text-align: center; }
-	.top-content .list-box:first-child { margin-top: 50px; }
+	.top-content .list-box:first-child { margin-bottom: 50px; }
 	.top-content .list-box-icon { float: none; display: inline-block; }
 	.top-content .list-box h3 { float: none; width: auto; margin-top: 20px; }
 	.top-content .list-box-description { float: none; width: auto; }
 	.top-content .top-big-link { margin-top: 25px; }
-	.top-content .top-big-link button { margin-top: 10px; }
+	.top-content .top-big-link button { margin-bottom: 10px; font-size: 1em;}
 
 	.section-description p { padding: 0; }
 
@@ -126,8 +130,6 @@ and (max-device-width: 667px) {
 	.always-beautiful-box-text-left { padding-right: 0; }
 
 	.how-it-works-box-icon .how-it-works-step { left: 20px; }
-
-
     .pricing-box { padding-bottom: 50px; }
     .pricing-box:last-child { padding-bottom: 0; }
 
@@ -144,11 +146,11 @@ and (max-device-width: 667px) {
 /* iPhone 4S and below */
 @media only screen 
 and (min-device-width: 320px)
-and (max-device-width: 480px) {
+and (max-device-width: 375px) {
   .main-heading { padding-bottom: 0em; }
   .inner-bg h1, h2 { font-size: 1.5em; }
   .inner-bg h3 { 
-    font-size: 0.8em; 
+    font-size: 1em;
     text-align: left;
   }
   .app-features h3 {

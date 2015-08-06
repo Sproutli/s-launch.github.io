@@ -335,6 +335,11 @@ ul.navbar-nav {
 	margin-top: 60px;
 }
 
+.top-big-link button, .app-features button {
+  margin: 0 20px;
+  font-size: 1.3em;
+}
+
 
 /***** Features *****/
 
