@@ -58,7 +58,9 @@ jQuery(document).ready(function() {
   $('#clock').FlipClock(123000, {countdown: true});
 
   $('#brian').on('click', function() {
-    window.location = 'https://www.youtube.com/watch?v=zybsn1qGWMI';
+    $('#video-frame').html('<iframe id="the-video" class="embed-responsive-item" src="https://www.youtube.com/embed/zybsn1qGWMI?autoplay=1" autoplay allowfullscreen></iframe>');
+    $('#brian').removeClass('hidden');
+    $('#brian').css('background-image', 'url("")');
   });
 
   $('#kindness-card-submit').on('click', function() {

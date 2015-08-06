@@ -802,6 +802,7 @@ footer {
   background-position: top;
   display: block;
   min-height: 300px;
+  cursor: pointer;
 }
 
 
