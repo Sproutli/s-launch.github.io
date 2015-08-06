@@ -109,6 +109,10 @@ img { max-width: 100%; }
 	padding-top: 60px;
 }
 
+.section-bottom-button img {
+	margin-top: 20px;
+}
+
 .btn-link-1 {
 	position: relative;
 	display: inline-block;
