@@ -169,7 +169,7 @@ img { max-width: 100%; }
 }
 
 .modal-body {
-	padding: 25px 25px 15px 25px;
+	padding: 25px 50px 15px 50px;
 }
 
 .modal-body img {
@@ -177,11 +177,11 @@ img { max-width: 100%; }
 }
 
 .modal-header {
-	padding: 25px 25px 15px 25px;
+	padding: 25px 20px 15px 50px;
 }
 
 .modal-footer {
-	padding: 15px 25px 25px 25px;
+	padding: 15px 50px 25px 50px;
 }
 
 .modal-header, .modal-footer { border: 0; }
