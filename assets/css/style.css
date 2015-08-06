@@ -19,15 +19,15 @@ a, a:hover, a:focus {
 h1, h2 {
 	margin-top: 10px;
 	font-size: 38px;
-    font-weight: 100;
-    color: #555;
-    line-height: 50px;
+  font-weight: 300;
+  color: #555;
+  line-height: 50px;
 }
 
 h3 {
-  font-size: 1.8em;
+  font-size: 1.5em;
   font-weight: 300;
-  line-height: 1.5em;
+  line-height: 1em;
 }
 
 img { max-width: 100%; }
@@ -72,8 +72,8 @@ img { max-width: 100%; }
 /***** General style, all sections *****/
 
 .section-container {
-    margin: 0 auto;
-    padding-bottom: 80px;
+  margin: 0 auto;
+  padding-bottom: 80px;
 }
 
 .section-container-gray-bg {
@@ -98,8 +98,8 @@ img { max-width: 100%; }
 }
 
 .section-description p {
-    margin-top: 20px;
-	padding: 0 120px;
+  margin-top: 20px;
+  padding: 0 120px;
 }
 .section-container-image-bg .section-description p {
 	opacity: 0.8;
@@ -749,9 +749,9 @@ footer {
 }
 
 .app-features-box .app-features-box-icon {
-    font-size: 80px;
-    color: #37b398;
-    line-height: 80px;
+  font-size: 80px;
+  color: #37b398;
+  line-height: 80px;
 }
 
 .app-features-box h3 {
