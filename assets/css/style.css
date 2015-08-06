@@ -727,11 +727,14 @@ footer {
 }
 
 .footer-social {
-	font-size: 50px;
-    line-height: 50px;
+  font-size: 50px;
+  line-height: 50px;
 }
 
-.footer-social a { color: #ddd; }
+.footer-social a { 
+  color: rgba(93, 101, 108, 1); 
+  padding: 0px 10px 0px 10px;
+}
 .footer-social a:hover, .footer-social a:focus { color: #37b398; }
 
 .footer-copyright {
