@@ -54,9 +54,6 @@ jQuery(document).ready(function() {
 
   $('#big-guy').css("height", $(window).height());
 
-  // CLOCK
-  $('#clock').FlipClock(123000, {countdown: true});
-
   $('#brian').on('click', function() {
     $('#video-frame').html('<iframe id="the-video" class="embed-responsive-item" src="https://www.youtube.com/embed/zybsn1qGWMI?autoplay=1" autoplay allowfullscreen></iframe>');
     $('#brian').removeClass('hidden');
