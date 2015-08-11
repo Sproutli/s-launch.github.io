@@ -31,20 +31,21 @@
 }
 
 /* iPhone 4S and below */
-@media only screen 
-and (min-device-width: 320px)
-and (max-device-width: 375px) {
+@media only screen and (min-height: 480px) and (max-width: 480px) {
   .main-heading { padding-bottom: 0em; }
   .inner-bg h1, h2 { 
-    font-size: 2.0em; 
+    font-size: 1.8em; 
+    margin-bottom: 0;
+    line-height: 1.2em;
   }
   h3 { 
-    font-size: 1.2em;
+    font-size: 1.0em;
     text-align: left;
   }
   .app-features h3 {
     font-size: 1.3em; 
     text-align: center;
+    font-weight: 300;
   }
   .app-features p, .app-features-box p {
     font-size: 0.8em; 
@@ -95,7 +96,7 @@ and (max-device-width: 375px) {
 	.testimonial-list .testimonial-image .testimonial-icon { display: none; }
 
   #video-text {
-    height: 240px;
+    height: 200px;
   }
 
   #watch-the-video {
@@ -103,7 +104,6 @@ and (max-device-width: 375px) {
   }
 
   #watch-the-video h2 {
-    padding-top: 0;
     font-size: 1.5em;
     padding-top: 2em;
   }
@@ -122,12 +122,13 @@ and (max-device-width: 375px) {
   .app-features-container {
     padding-top: 20px;
   }
+  #watch-the-video a {
+    font-weight: 300;
+  }
 }
 
 /* iPhone 5 */
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 667px) {
+@media only screen and (min-height: 481px) and (max-width: 667px) {
   .main-heading h1, h3 { 
     padding-bottom: 0em; 
     font-size: 2.3em;
@@ -183,6 +184,20 @@ and (max-device-width: 667px) {
   .app-features-container {
     margin-top: 50px;
   }
+  #watch-the-video a {
+    font-weight: 300;
+  }
+  #watch-the-video h2 {
+    padding-top: 0;
+    font-size: 1.5em;
+    padding-top: 1.3em;
+  }
+
+  #watch-the-video h3 {
+    font-size: 1em;
+    margin-top: 0;
+    padding-bottom: 1em;
+  }
 }
 
 
@@ -191,7 +206,7 @@ and (max-device-width: 667px) {
 and (min-device-width: 414px) 
 and (max-device-width: 746px) {
   .main-heading h1, .main-heading { 
-    padding-top: 1em;
+    padding-top: 0em;
     font-size: 1.8em;
     padding-bottom: 1em;
   }
@@ -233,7 +248,7 @@ and (max-device-width: 746px) {
   #watch-the-video h2 {
     padding-top: 0;
     font-size: 1.5em;
-    padding-top: 2em;
+    padding-top: 1.3em;
   }
 
   #watch-the-video h3 {
