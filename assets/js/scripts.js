@@ -17,7 +17,7 @@ jQuery(document).ready(function() {
 	/*
 	    Navigation
 	*/
-	$('a.scroll-link').on('click', function(e) {
+	$('.scroll-link').on('click', function(e) {
 		e.preventDefault();
 		scroll_to($(this), 0);
 	});
@@ -25,7 +25,7 @@ jQuery(document).ready(function() {
     /*
         Background slideshow
     */
-    $('.top-content').backstretch("assets/img/backgrounds/2@2x.jpg", {centeredY: false, centeredX: false, fade: 200});
+    $('.top-content').backstretch($('.top-content').data("background-image"), {centeredY: false, centeredX: $('.top-content').data('centered'), fade: 200});
 
     $('#top-navbar-1').on('shown.bs.collapse', function(){
     	$('.top-content').backstretch("resize");
