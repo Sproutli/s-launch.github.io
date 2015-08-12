@@ -26,7 +26,7 @@ h1, h2 {
 
 h3 {
   font-size: 1.5em;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5em;
 }
 
@@ -809,6 +809,10 @@ footer {
   cursor: pointer;
 }
 
+/*** FAQ **/
+.faq-container h3 {
+  padding-top: 1em;
+}
 
 /******** util ********/
 .hidden {
