@@ -125,6 +125,10 @@
   #watch-the-video a {
     font-weight: 300;
   }
+
+#heading-subtext-about {
+  padding-top: 1em;
+}
 }
 
 /* iPhone 5 */
@@ -198,16 +202,19 @@
     margin-top: 0;
     padding-bottom: 1em;
   }
+  #heading-subtext-about {
+    padding-top: 3em;
+  }
 }
 
 
 /* iPhone6 and iPhone 6+ */
 @media only screen 
-and (min-device-width: 414px) 
+and (min-device-width: 375px) 
 and (max-device-width: 746px) {
   .main-heading h1, .main-heading { 
     padding-top: 0em;
-    font-size: 1.8em;
+    font-size: 1.6em;
     padding-bottom: 1em;
   }
   h3 { 
@@ -260,6 +267,11 @@ and (max-device-width: 746px) {
   #brian {
     height: 240px;
     background-size: cover;
+  }
+
+  #heading-subtext-about {
+    padding-top: 3em;
+    text-align: center;
   }
 }
 

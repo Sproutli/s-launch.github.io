@@ -26,7 +26,7 @@ h1, h2 {
 
 h3 {
   font-size: 1.5em;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5em;
 }
 
@@ -812,6 +812,12 @@ footer {
 /*** FAQ **/
 .faq-container h3 {
   padding-top: 1em;
+  font-weight: 400;
+}
+
+/*** Heading subtext ***/
+#heading-subtext-about {
+  padding-top: 8em;
 }
 
 /******** util ********/
