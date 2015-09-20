@@ -14,6 +14,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,100,300,500">
 
     <!-- Custom styles for this template -->
     <link href="cover.css" rel="stylesheet">
@@ -33,10 +34,8 @@
 
         <div class="cover-container">
 
-          <div class="masthead clearfix">
-            <div class="inner">
-              <img class="img-responsive" src="assets/img/sproutli/logo_v2_leaf_outline-crop-u5385_2x.png">
-            </div>
+          <div class="inner ">
+            <img style="margin: 0 auto;" class="img-responsive" src="assets/img/sproutli/logo_v2_leaf_outline-crop-u5385_2x.png">
           </div>
 
           <div class="inner cover">
@@ -46,12 +45,12 @@
             
             <p class="lead">Good news - you're about to become one of the <strong>first people in the world</strong> to get access to the Sproutli Kindness Card.</p> 
             
-            <p class="lead">To thank you for being such a cool cat, we&apos;re offering you a 50% discount on your first year&apos;s membership if you sign up before 1 October. Pretty cool, right?</p>
-
-            <p class="lead">Mash the button below to get it now!</p>
+            <p class="lead">To thank you for being such a cool cat, we&apos;re offering you a 50% discount on your first year&apos;s membership if you sign up before 1 October.</p> 
+            
+            <p class="lead">Mash the button below to <strong>get it now</strong>!</p>
             </br>
             <p class="lead">
-              <button data-amount="2000" type="button" class="btn btn-default">Gimme!</button>
+              <button data-amount="2000" type="button" class="btn btn-default btn-lg">Gimme!</button>
             </p>
             </br>
 
@@ -89,7 +88,7 @@
       var amount;
       var handler = StripeCheckout.configure({
         key: 'pk_live_3eYXbGXcLQgQM6Gmbfix9CKv',
-        image: 'logo.png',
+        image: 'assets/img/sproutli/leaf.png',
         locale: 'auto',
         token: function(token) {
           var showModal = function() {
@@ -109,8 +108,8 @@
         var displayAmount = "$" + amount / 100;
         // Open Checkout with further options
         handler.open({
-          name: 'Homeless Hounds',
-          description: displayAmount + ' monthly donation',
+          name: 'Sproutli Kindness Card',
+          description: 'Early-adopter discount!',
           currency: "aud",
           amount: amount
         });

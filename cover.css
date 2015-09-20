@@ -15,7 +15,7 @@ a:hover {
 .btn-default:focus {
   color: #fff;
   text-shadow: none; /* Prevent inheritence from `body` */
-  background-color: rgb(236, 88, 15);
+  background-color: rgba(93, 101, 108, 1);
   border: none;
 }
 
@@ -27,11 +27,12 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
+  background: rgba(56, 179, 152, 1);
 }
 body {
   color: #fff;
   text-align: center;
+  font-family: 'Lato', sans-serif;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
@@ -121,7 +122,6 @@ body {
 .cover .btn-lg {
   padding: 10px 20px;
   font-weight: bold;
-  background-color: rgb(
 }
 
 
