@@ -77,7 +77,9 @@
             <h4 class="modal-title" id="myModalLabel">Thanks</h4>
           </div>
           <div class="modal-body">
-            Thank you for your kind donation! We greatly appreciate it.
+            <p class="lead">Thanks for claiming your Kindness Card! We've sent you a receipt by email.</p>
+
+            <p class="lead">Your Kindness Card membership will activate on the 1st of October. Just open the app on the 1st to start claiming discounts!</p>
           </div>
         </div>
       </div>
@@ -94,19 +96,29 @@
     <script>
       var amount;
       var handler = StripeCheckout.configure({
-        key: 'pk_live_3eYXbGXcLQgQM6Gmbfix9CKv',
+        key: 'pk_test_1uR3RjrTC09TxNN4L1lb2c14',
         image: 'assets/img/sproutli/leaf.png',
         locale: 'auto',
         token: function(token) {
           var showModal = function() {
             $('#myModal').modal('show');
           };
+
           var payload = {
             token: token.id,
-            email: token.email,
-            plan: amount / 100
+            email: token.email
           };
-          $.post('/subscribe', payload, showModal);
+
+          $.ajax({
+            url: 'http://sproutli-staging.elasticbeanstalk.com/api/v1/kindness_card', 
+            type: 'post',
+            data: JSON.stringify(payload), 
+            headers: {
+              'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBZG1pbiI6ZmFsc2V9.SjRAiEp5PABREtGRArAHy9REzR2e1MdjfuFD717-6us'
+            },
+            contentType: 'application/json',  
+            success: showModal
+          });
         }
       });
 
