@@ -66,9 +66,9 @@
             
             <p class="lead">..and we&apos;re just getting started!</p>
             
-            <p class="lead">To thank you for being such a cool cat, we&apos;re giving you your <strong>first month free</strong>!</p>
+            <p class="lead">To thank you for being such a great person, we&apos;re giving you your <strong>first month free</strong>!</p>
             
-            <p class="lead">Mash one of the buttons below to <strong>claim your discount</strong>, and your membership will activate immediately - just make sure to use the same email you signed up for Sproutli with!</p> 
+            <p class="lead">Tap one of the buttons below to <strong>claim your discount</strong>, and your membership will activate immediately - just make sure to use the same email you signed up for Sproutli with!</p> 
             </br>
             </br>
 
@@ -96,7 +96,23 @@
           <div class="modal-body">
             <p class="lead">Thanks for claiming your Kindness Card! We've sent you a receipt by email.</p>
 
-            <p class="lead">Your Kindness Card membership will activate on the 1st of October. Just open the app on the 1st to start claiming discounts!</p>
+            <p class="lead">Your Kindness Card membership is now active - just open the app to start using it!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Sorry!</h4>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Sorry! Something went wrong.</p>
+
+            <p class="lead">Make sure you entered your credit card details correctly, and you're using your Sproutli email address.</p>
           </div>
         </div>
       </div>
@@ -112,39 +128,46 @@
     <script src="https://checkout.stripe.com/checkout.js"></script>
     <script>
       var amount;
+      var type;
       var handler = StripeCheckout.configure({
-        key: 'pk_live_hVZP5pxbwfBU0wflL8UQaBmT',
+         key: 'pk_live_hVZP5pxbwfBU0wflL8UQaBmT',
+        //key: 'pk_test_1uR3RjrTC09TxNN4L1lb2c14',
         image: 'assets/img/sproutli/leaf.png',
         locale: 'auto',
         token: function(token) {
-          var showModal = function() {
-            $('#myModal').modal('show');
-            ga('send', 'event', 'kindnessCard', 'payment', 'finished');
+          var showModal = function(modal) {
+            return function() {
+              $('#' + modal).modal('show');
+              ga('send', 'event', 'kindnessCard', 'payment', 'finished');
+            }
           };
 
           var payload = {
             token: token.id,
-            email: token.email
+            email: token.email,
+            type: type
           };
 
           ga('send', 'event', 'kindnessCard', 'payment', 'pay');
 
           $.ajax({
             url: 'http://sproutli-staging.elasticbeanstalk.com/api/v1/kindness_card', 
+            // url: 'http://localhost:8000/api/v1/kindness_card', 
             type: 'post',
             data: JSON.stringify(payload), 
             headers: {
               'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBZG1pbiI6ZmFsc2V9.SjRAiEp5PABREtGRArAHy9REzR2e1MdjfuFD717-6us'
             },
             contentType: 'application/json',  
-            success: showModal
+            success: showModal('myModal'),
+            error: showModal('errorModal')
           });
         }
       });
 
       $('.btn-default').on('click', function(e) {
-        var amount = $(this).data('amount');
-        var type = $(this).data('type');
+        amount = $(this).data('amount');
+        type = $(this).data('type');
         var niceType = type.charAt(0).toUpperCase() + type.slice(1);
         ga('send', 'event', 'kindnessCard', 'payment', 'start');
         // Open Checkout with further options
